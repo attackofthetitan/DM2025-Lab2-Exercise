@@ -1,51 +1,29 @@
 {
-    "title": "Data Sets",
-    "video_segment": "110:58 - 114:58",
+    "title": "Outliers and Missing Values",
+    "video_segment": "134:00 - 138:28",
     "content_flow": [
         {
             "content_type": "slide_description",
-            "text": "The slide is titled \"Data Sets\". It defines data sets as a collection of data organized in certain formats. It then categorizes data sets into two types: Structured Data Sets and Unstructured Data Sets. Structured data sets are described as organized in clear, predictable structures, often in rows and columns. Unstructured data sets are described as more complex and varied, usually derived from human-generated content like text, images, and videos."
+            "text": "The slide discusses outliers, defining them as data objects with characteristics that are considerably different from most of the other data objects in the data set. It also shows a scatter plot with several clusters of data points and some points circled in red, presumably representing outliers."
         },
         {
             "content_type": "transcript_segment",
-            "text": "So the next one we want to talking about the data set. We have different type of data set. You might heard about the term called structured data or unstructured data. Structured data is you know exactly the meaning about the row and column. Unstructured data is they will change. Sometimes you don't really know how to interpret them. Currently that the human generated content such as image, text, video, we consider them as unstructured data. Luckily with this AI thing and right now text, image, video already can be converting into structured format, but you still need to be able to know once we convert are they meaningful or not.",
-            "timestamp": "110:58"
+            "text": "Outliers are data objects with characteristics that are considerably different than most of the other data objects in the data set. Noise is not sometimes not just noise because they can combine with many, many different things. And then actually they will make you to decide are they outlier or not outlier. So what is outlier? Outliers being considered they are not ordinary. They are different from others. So for right now, you can actually see for this figure. Can you identify which one are outlier? You might say professor, you already say that there's one who actually marks a red circle. Your data like this one. Right? But...",
+            "timestamp": "134:00"
         },
         {
             "content_type": "transcript_segment",
-            "text": "So we have different kind of characteristic about our data dimension we mentioned before. And then right here talking about another term called sparsity. Sparsity comes from a keyword called sparse. Sparse means very few. Like what we say that if you have the record in e-commerce store, like in Amazon. Your data is sparse in that data record. Because they have millions of the book. But then you probably only buy 10 books before. So make your data in the million of then become very sparse. So data are sparse. And then sometimes in certain place, we will also talking about the resolution. And that part about sparsity, how to solving them, how to do the resolution, we will talking about that later in some of the courses, some of them will be in classification, some of them will be in the text mining.",
-            "timestamp": "111:58"
+            "text": "So sometimes to detect outlier from noise is kind of difficult too. So you really, really require a lot of understanding. And how do I know they are understanding? I don't know. So then you actually need to check your problem, understand what's the context, understand the background in order for you to make the correct hypothesis. You try the data to validate that hypothesis to see if that is correct or not. So that is how you try to process the data. Not just have the data and get everything out of it. Then you will find you spend a lot of GPU time trying out something that is not useful.",
+            "timestamp": "134:41"
         },
         {
             "content_type": "slide_description",
-            "text": "The slide is titled \"Characteristics of Data Sets\". It lists three characteristics: Dimensionality, Sparsity, and Resolution. Under Sparsity, it notes \"Only presence counts\" and \"Patterns depend on the scale\". A speech bubble with \"Later\" is drawn next to Sparsity."
-        },
-        {
-            "content_type": "slide_description",
-            "text": "The slide is titled \"Types of Data Sets\". It lists three types: Data Matrix, Document Data, and Transaction Data."
+            "text": "The slide transitions to 'Missing Values'. It lists reasons for missing values, such as information not being collected (e.g., people declining to give their age and weight) and attributes not being applicable to all cases (e.g., annual income is not applicable to children). It also has a section on handling missing values."
         },
         {
             "content_type": "transcript_segment",
-            "text": "So we want to talk about different type of the data set. We have the data matrix, document data, transaction data. So data matrix look like this way. If your data can be convert into meaningful number, they can become data metric. Most of the data are in numerical attribute and then we allow them to do the ratio operation. To make sure all the value inside need to become the ratio data. If it's not, then right here they need to be ratio data.",
-            "timestamp": "112:58"
-        },
-        {
-            "content_type": "slide_description",
-            "text": "The slide is titled \"Data Matrix\". It states that a data matrix is applicable if each object has the same fixed set of numeric attributes. A table is shown with columns for 'Price', 'Sells', '# Reviews', and '# Readers', and rows for 'Book 1' through 'Book 5'."
-        },
-        {
-            "content_type": "transcript_segment",
-            "text": "Okay. And the document data is a part that we were talking about later because before 2013, this is before 2013. And the people actually utilize document data in a vector form. Right here, they select important keyword in the document. And then after that, for every document, you utilize those important keyword, we got some number, occurrence of the number for that keyword right there. We generate a something called term vector. So each one of them are become vector. So why vector? Because in computer science, vector is the easiest way for us to operate. We convert them to vector. So in other word, every number right here are become ratio data.",
-            "timestamp": "113:48"
-        },
-        {
-            "content_type": "slide_description",
-            "text": "The slide is titled \"Document Data\". It explains that usually unstructured and textual, each document can be converted as a term vector. The value of each component is the number of times the corresponding term in the document appears. A table shows 'Document 1', 'Document 2', and 'Document 3' with columns representing terms like 'Learn', 'Teach', 'Data', 'Mining', 'AI', 'Python', 'R', 'Dataset'. The values in the table represent the count of each term in each document. A note indicates \"Before 2013\" with a handwritten \"B\" next to it. An arrow points to the table with the label \"Vector\" and \"Vector ratio\"."
-        },
-        {
-            "content_type": "transcript_segment",
-            "text": "But that is way we try to working on that. Before 2013. After 2013, how we try to do that? We were talking about that that in the text mining part. So maybe three weeks later.",
-            "timestamp": "114:44"
+            "text": "Next one, missing value. Okay. Missing value is one that we say for example, you do not collect the information. So then my answer will be you guessed. For example, can I ask me professor, what is your age? Then my answer will be you guess. So I'm not going to give you my age. But then, you know, I have some PhD student, he already graduate. Then he keep on guessing. Professor, I think you are this one. Is that correct? I say guess. Okay. So all you can say, maybe they are just noise. So it will be very possible that those information cannot be collected. And then there's one thing is people intentionally not try to give that to you. Or then they have something is like certain attribute. You probably there's no way for you to get that information because for example, right now you ask the children, what is their income? They don't have that. So that is, it looks like missing, but actually that missing is reasonable. But then so what the part is, how can you differentiate that null supposed to be null or then null supposed to be something you need to be collected. That is the problem for missing. Okay. How do you know? You need to also have your final, your hypothesis about that. You collect the income, then you need to thinking about the income probably, you know, there's one year we do the KTV cup and then we try to know is any black money actually being delivered from the different account from one transaction to another. How do we know that is the black money? You need to make hypothesis. For example, age. And age make difference. Yes. Because they are going to get certain fake account or some account. So the student need to do a lot of understanding behind a word. Can be exist in front of different counter at the same time or not. So if you find out the evidence like this account actually show up at the different location of the ATM and about the same time, which mean they do have the gunner, right? And so that part require people to understand about it. How do you know about that type, you need to put in the spatial data inside. Depends on your hypothesis.",
+            "timestamp": "135:30"
         }
     ]
 }
